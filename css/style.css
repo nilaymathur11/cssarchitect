@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.main{
+    width: var(--main-width);
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: var(--main-radius);
+    padding: var(--main-pad);
+    background-color: var(--main-bg);
+}
+
+h1{
+    text-align: center;
+    margin: var(--h1-margin);
+    color: var(--h1-color);
+}
+
+h2{
+    color: rgb(198, 148, 12);
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.search{
+    text-align: center;
+}
+
+.submit{
+    text-align: center;
+}
+
+button{
+    margin: 20px;
+}
+
+.buttons{
+    text-align: center;
+}

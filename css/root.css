@@ -1,0 +1,312 @@
+:root{
+    --blue-6: #1890FF;
+    --blue-5: #40A9FF;
+    --blue-7: #096DD9;
+    --gray-1: #FFFFFF;
+    --gray-2: #FAFAFA;
+    --gray-3: #F5F5F5;
+    --gray-5: #D9D9D9;
+    --gray-6: #BFBFBF;
+    --gray-9: #262626;
+    --p-8: 8px;
+    --p-12: 12px;
+    --p-16: 16px;
+    --m-10: 10px;
+    --m-15: 15px;
+    --m-20: 20px;
+    --rad-2: 2px;
+    --rad-20: 20px;
+    --lh-24: 24px;
+    --fs-16: 16px;
+    --fs-14: 14px;
+    --fs-20: 20px;
+    --fw-400: 400;
+    --fw-700: 700;
+    --w-74: 74px;
+    --h-32: 32px;
+    --w-100: 100px;
+    --w-500: 500px;
+    --h-50: 50px;
+    --w-200: 100px;
+    --h-100: 50px;
+    --bg-pos-20: 20px;
+    --main-radius: 20px;
+    --main-pad: 10px;
+    --main-margin: 100px;
+    --main-bg: #e4e3e3;
+    --h1-margin: 50px;
+    --search-radius: 10px;
+    --main-width: 500px;
+    --input-bg: #F5F5F5;
+    --input-color: #262626;
+    --input-width-lg: 320px;
+    --input-height-lg: 40px;
+    --input-width-sm: 320px;
+    --input-height-sm: 24px;
+    --input-pad-tp-bt: 12px;
+    --input-pad-lt-rt: 50px;
+    --input-ico-pos: 20px;
+    --input-fs: 16px;
+    --input-border: #1890FF;
+    --h1-color: #40A9FF;
+    --btn-sm-width: 98px;
+    --btn-sm-height: 32px;
+    --btn-lg-width: 104px;
+    --btn-lg-height: 40px;
+    --btn-bg-primary: #1890FF;
+    --btn-bg-default: #FFFFFF;
+    --btn-color-default: #262626;
+    --btn-color-hover: #40A9FF;
+    --btn-rad: 2px;
+    --btn-margin: 50px;
+    --btn-fs: 16px;
+}
+
+/* Input Properties */
+
+.input{
+    border: none;
+    color: var(--input-color);
+    border-radius: var(--input-radius);
+    padding: var(--input-pad-tp-bt) var(--input-pad-lt-rt);
+    background-color: var(--input-bg);
+    box-sizing: border-box;
+    font-size: var(--input-fs);
+    margin: 10px 0px;
+}
+
+.input-lg{
+    width: var(--input-width-lg);
+    height: var(--input-height-lg);
+}
+
+.input-sm{
+    width: var(--input-width-sm);
+    height: var(--input-height-sm);
+}
+
+.input-ico{
+    background-image: url(../images/person.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.input::placeholder{
+    text-align: center;
+    color: black;
+}
+
+.input:hover{
+    border: 1px solid var(--blue-5);
+}
+
+.input:focus{
+    border: 1px solid var(--blue-6);
+}
+
+/* Button Properties */
+
+.btn{
+    border: none;
+    border-radius: var(--btn-rad);
+    font-size: var(--btn-fs);
+    padding: 5px 16px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 10% 47%;
+    background-color: unset;
+    text-align: right;
+}
+
+/* Size Properties */
+
+.btn-lg{
+    width: var(--btn-lg-width);
+    height: var(--btn-lg-height);
+}
+
+.btn-sm{
+    width: var(--btn-sm-width);
+    height: var(--btn-sm-height);
+}
+
+/* Color and icon Properties */
+
+.btn-nobg-primary{
+    color: var(--blue-6);
+}
+
+.btn-nobg-default{
+    color: var(--gray-9);
+    text-align: center;
+}
+
+.btn-nobg-primary-ico{
+    color: var(--blue-6);
+    background-image: url(../images/blue-6.svg);
+}
+
+.btn-nobg-default-ico{
+    color: var(--gray-9);
+    background-image: url(../images/gray-9.svg);
+}
+
+.btn-default{
+    background-color: var(--gray-1);
+    color: var(--gray-9);
+    text-align: center;
+}
+
+.btn-default-ico{
+    background-color: var(--gray-1);
+    color: var(--gray-9);
+    background-image: url(../images/gray-9.svg);
+}
+
+.btn-primary{
+    background-color: var(--blue-6);
+    color: var(--gray-1);
+    text-align: center;
+}
+
+.btn-primary-ico{
+    background-color: var(--blue-6);
+    color: var(--gray-1);
+    background-image: url(../images/gray-1.svg);
+}
+
+/* Border Properties */
+
+.btn-dashed-default{
+    background-color: var(--gray-1);
+    color: var(--gray-9);
+    border: 1px dashed var(--gray-5);
+    text-align: center;
+}
+
+.btn-dashed-default-ico{
+    background-color: var(--gray-1);
+    color: var(--gray-9);
+    border: 1px dashed var(--gray-5);
+    background-image: url(../images/gray-9.svg);
+}
+
+/* Hover Properties */
+
+.btn-nobg-default-hover{
+    background-color: var(--gray-2);
+}
+
+.btn-nobg-primary-hover{
+    color: var(--blue-5);
+}
+
+.btn-nobg-primary-ico-hover{
+    color: var(--blue-5);
+    background-image: url(../images/blue-5.svg);
+}
+
+.btn-default-hover{
+    color: var(--blue-5);
+}
+
+.btn-default-ico-hover{
+    color: var(--blue-5);
+    background-image: url(../images/blue-5.svg);
+}
+
+.btn-dashed-hover{
+    border-color: var(--blue-5);
+    color: var(--blue-5);
+}
+
+.btn-dashed-ico-hover{
+    color: var(--blue-5);
+    border-color: var(--blue-5);
+    background-image: url(../images/blue-5.svg);
+}
+
+.btn-primary-hover{
+    background-color: var(--blue-5);
+}
+
+/* Onclick Properties */
+
+.btn-dashed-click{
+    border-color: var(--blue-7);
+    color: var(--blue-7);
+}
+
+.btn-dashed-ico-click{
+    border-color: var(--blue-7);
+    background-image: url(../images/blue-7.svg);
+    color: var(--blue-7);
+}
+
+.btn-click-default{
+    border: 1px solid var(--blue-7);
+    color: var(--blue-7);
+}
+
+.btn-click-default-ico{
+    color: var(--blue-7);
+    border: 1px solid var(--blue-7);
+    background-image: url(../images/blue-7.svg);
+}
+
+.btn-click-primary{
+    background-color: var(--blue-7);
+}
+
+.btn-load-default{
+    background-color: var(--gray-5);
+    background-image: url('../images/load-gray-9.svg');
+    opacity: 0.65;
+}
+
+.btn-load-primary{
+    background-color: var(--blue-6);
+    background-image: url('../images/load-gray-1.svg');
+    opacity: 0.65;
+}
+
+.btn-load-nobg-default{
+    background-image: url('../images/load-gray-9.svg');
+    background-color: var(--gray-3);
+}
+
+.btn-load-no-bg-primary{
+    background-image: url('../images/load-blue-5.svg');
+}
+
+/* Disabled Button */
+
+.btn-disabled{
+    border-color: unset;
+    background-color: var(--gray-3);
+    background-image: unset;
+    color: var(--gray-6);
+    opacity: 0.65;
+}
+
+.btn-disabled-ico{
+    border-color: unset;
+    background-color: var(--gray-3);
+    background-image: url(../images/gray-6.svg);
+    color: var(--gray-6);
+    opacity: 0.65;
+}
+
+.btn-nobg-disabled{
+    border-color: unset;
+    background-image: unset;
+    color: var(--gray-6);
+    opacity: 0.65;
+}
+
+.btn-nobg-disabled-ico{
+    border-color: unset;
+    color: var(--gray-6);
+    background-image: url(../images/gray-6.svg);
+    opacity: 0.65;
+}

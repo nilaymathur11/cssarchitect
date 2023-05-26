@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>User Details</h1>
+            <div class="search">
+                <input type="text" name="name" placeholder="Enter Your Name" class="input input-lg input-ico">
+                <input type="email" name="email" placeholder="Enter Your Email" class="input input-lg input-ico">
+            </div>
+            <div class="submit">
+                <button class="btn btn-lg btn-primary-ico" name="submit_btn">Submit</button>
+            </div>
+    </div>
+    <hr>
+    <h2>Design System And CSS Architecture</h2>
+    <div class="buttons">
+        <button class="btn btn-lg btn-default">Submit</button>
+        <button class="btn btn-lg btn-primary">Submit</button>
+        <button class="btn btn-sm btn-default-ico">Submit</button>
+        <button class="btn btn-lg btn-primary-ico">Submit</button>
+        <button class="btn btn-sm btn-dashed-default">Submit</button>
+        <button class="btn btn-lg btn-dashed-default-ico">Submit</button>
+        <button class="btn btn-lg btn-nobg-primary">Submit</button>
+        <button class="btn btn-lg btn-nobg-primary-ico">Submit</button>
+        <button class="btn btn-lg btn-nobg-default">Submit</button>
+        <button class="btn btn-lg btn-nobg-default-ico">Submit</button>
+    </div>
+</body>
+<script src="js/root.js"></script>
+
+<script>
+    var mybtn = document.querySelector('.btn');
+    var h1 = document.querySelector('h1');
+    mybtn.addEventListener('click',()=>{
+        setTimeout(
+            function(){
+                h1.innerText = 'Success!';
+            }
+        ,2000)
+    })
+</script>
+
+</html>
