@@ -299,6 +299,7 @@
 
 .btn-nobg-disabled{
     border-color: unset;
+    background-color: unset;
     background-image: unset;
     color: var(--gray-6);
     opacity: 0.65;
@@ -306,6 +307,7 @@
 
 .btn-nobg-disabled-ico{
     border-color: unset;
+    background-color: unset;
     color: var(--gray-6);
     background-image: url(../images/gray-6.svg);
     opacity: 0.65;
